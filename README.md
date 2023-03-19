@@ -1,44 +1,28 @@
-Introduction:
-This project aims to predict whether a person has diabetes or not based on certain features such as age, BMI, blood pressure, etc. This is a binary classification problem, where the output can be either 0 or 1, indicating the absence or presence of diabetes, respectively. The dataset used for this project is the Pima Indians Diabetes Dataset, which contains 768 observations with 8 input variables and 1 output variable.
 
-Dataset:
-The dataset used in this project can be found at https://www.kaggle.com/uciml/pima-indians-diabetes-database. The dataset consists of the following features:
+## Diabetes Predictor
+> Predict Diabetes using Machine Learning.
 
-Pregnancies: Number of times pregnant
-Glucose: Plasma glucose concentration a 2 hours in an oral glucose tolerance test
-BloodPressure: Diastolic blood pressure (mm Hg)
-SkinThickness: Triceps skin fold thickness (mm)
-Insulin: 2-Hour serum insulin (mu U/ml)
-BMI: Body mass index (weight in kg/(height in m)^2)
-DiabetesPedigreeFunction: Diabetes pedigree function
-Age: Age (years)
-Outcome: Class variable (0 or 1) indicating the presence or absence of diabetes
-Requirements:
+In this project, our objective is to predict whether the patient has diabetes or not based on various features like *Glucose level, Insulin, Age, BMI*. We will perform all the steps from *Data gathering to Model deployment.* During Model evaluation, we compare various machine learning algorithms on the basis of accuracy_score metric and find the best one. Then we create a web app using Flask which is a python micro framework.
 
-Python 3.6 or higher
-NumPy
-Pandas
-Matplotlib
-Scikit-learn
-Jupyter Notebook
-Installation:
 
-Install the latest version of Python from the official website: https://www.python.org/downloads/
-Install the required Python packages using pip. Open the command prompt or terminal and enter the following command:
-pip install numpy pandas matplotlib scikit-learn jupyterlab
-Usage:
+> Read more about it in my [Blogpost](https://medium.com/@adityamankar09/building-a-diabetes-predictor-4702b99bc7e4).
 
-Download the dataset from the above mentioned URL and store it in a folder.
-Open Jupyter Notebook and navigate to the folder where the dataset is stored.
-Open the diabetes_prediction.ipynb file and run the code cells to train the model and make predictions.
-The trained model can be used to predict diabetes for new patients by providing their feature values as input.
-License:
-This project is licensed under the MIT License - see the LICENSE file for details.
+# **Screenshot**
 
-Contributors:
-This project was developed by [Your Name]. You can reach out to me at [Your Email ID] for any queries or suggestions.
+![](screenshot.jpg)
 
-Acknowledgments:
+# Installation
 
-The dataset used in this project is sourced from the National Institute of Diabetes and Digestive and Kidney Diseases.
-This project is inspired by the work of various data scientists and machine learning researchers who have contributed to the field of healthcare analytics.
+- Clone this repository and unzip it.
+
+- After downloading, `cd` into the `flask` directory.
+
+- Begin a new virtual environment with Python 3 and activate it.
+
+- Install the required packages using 
+   `pip install -r requirements.txt`
+
+- Execute the command:
+   `python app.py`
+
+- Open http://127.0.0.1:5000/ in your browser.
